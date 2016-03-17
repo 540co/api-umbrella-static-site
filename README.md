@@ -17,10 +17,3 @@ $ ./bin/middleman server
 ```
 
 This will start a local web server running at http://localhost:4567/
-
-### Deploy
-To publish to production with GitHub Pages:
-
-```
-$ ./bin/rake publish
-```
