@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       <% unless(current_page.url == "/") %>
-        <%= current_page.data.title %> | 
+        <%= current_page.data.title %> |
       <% end %>
-      Your API Site Name
+      FedAPI | Developer Portal
     </title>
 
     <%= stylesheet_link_tag("all") %>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <%= javascript_include_tag("ie_lt_9") %>
@@ -21,9 +22,12 @@
   </head>
   <body>
   <body class="<%= page_classes %>">
+    <div id="page-container" class="page-without-sidebar">
+
     <%= partial("layouts/header") %>
     <%= yield %>
     <%= partial("layouts/edit_me") %>
     <%= partial("layouts/footer") %>
+  </div>
   </body>
 </html>

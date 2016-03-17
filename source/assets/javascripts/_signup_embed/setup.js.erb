@@ -11,7 +11,7 @@ var defaults = {
   sendWelcomeEmail: true,
   websiteInput: false,
   termsCheckbox: true,
-  termsUrl: '<%= ENV["WEB_SITE_ROOT"] %>/terms/',
+  termsUrl: '<%= ENV["WEB_SITE_ROOT"] %>/docs/terms',
   verifyEmail: false
 };
 
@@ -29,7 +29,7 @@ bootbox.setDefaults({
   container: options.containerSelector
 });
 
-var signupFormTemplate = '<p>Sign up for an application programming interface (API) key to access and use web services available on the Data.gov developer network.</p>' +
+var signupFormTemplate = '<p>Sign up for an application programming interface (API) key to access and use web services available on the FedAPI developer network.</p>' +
 '<p class="required-fields"><abbr title="Required" class="required"><span class="abbr-required">*</span></abbr> Required fields</p>' +
   '<form id="api_umbrella_signup_form" class="form-horizontal" role="form">' +
     '<div class="form-group">' +
@@ -166,4 +166,3 @@ form.submit(function(event) {
     submit.button('reset');
   });
 });
-
